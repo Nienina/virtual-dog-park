@@ -42,11 +42,19 @@
       <h2 id="pet-title">Your dog</h2>
 
       <div class="pet-card">
-        <img id="pet-image" class="pet-image" src="assets/beagle.svg" alt="" width="180" height="180">
+        <img id="pet-image" class="pet-image stage-puppy" src="assets/beagle.svg" alt="" width="200" height="200">
 
         <div class="pet-info">
           <p class="pet-name" id="pet-name"></p>
           <p class="pet-breed" id="pet-breed"></p>
+          <p class="chip" id="stage-chip"></p>
+
+          <dl class="stats">
+            <dt>Day</dt>
+            <dd id="pet-day">1</dd>
+            <dt>Stage</dt>
+            <dd id="pet-stage">Puppy</dd>
+          </dl>
 
           <p class="meter-label">Happiness <span id="happiness-value">50</span> / 100</p>
           <div class="meter" role="progressbar" aria-label="Happiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
@@ -58,9 +66,19 @@
       <div class="actions">
         <button type="button" class="btn" id="feed-button">Feed</button>
         <button type="button" class="btn" id="play-button">Play</button>
+        <button type="button" class="btn" id="next-day-button">Next Day</button>
+        <button type="button" class="btn btn-quiet" id="start-over-button">Start Over</button>
       </div>
 
       <p id="action-message" class="message" role="status" aria-live="polite"></p>
+
+      <div class="confirm-box" id="confirm-box" hidden>
+        <p>Delete the saved progress for <span id="confirm-name"></span>? This cannot be undone.</p>
+        <div class="actions">
+          <button type="button" class="btn" id="cancel-start-over">Cancel</button>
+          <button type="button" class="btn btn-danger" id="confirm-start-over">Confirm</button>
+        </div>
+      </div>
     </section>
   </main>
 

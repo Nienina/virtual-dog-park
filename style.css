@@ -7,6 +7,8 @@
   --muted: #7A7367;
   --accent: #C8843F;
   --accent-dark: #8C5A24;
+  --green: #3B6D11;
+  --danger: #A32D2D;
   --radius: 14px;
 }
 
@@ -168,6 +170,20 @@ select:focus {
   color: #FFFFFF;
 }
 
+.btn-quiet {
+  color: var(--muted);
+}
+
+.btn-danger {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #FFFFFF;
+}
+
+.btn-danger:hover {
+  color: #FFFFFF;
+}
+
 .message {
   margin: 0 0 14px;
   min-height: 22px;
@@ -176,7 +192,7 @@ select:focus {
 }
 
 .message.is-error {
-  color: #A32D2D;
+  color: var(--danger);
 }
 
 .pet-card {
@@ -190,9 +206,22 @@ select:focus {
 }
 
 .pet-image {
-  width: 180px;
+  width: 200px;
   height: auto;
   flex: 0 0 auto;
+  transition: width 0.25s ease;
+}
+
+.pet-image.stage-puppy {
+  width: 120px;
+}
+
+.pet-image.stage-young {
+  width: 160px;
+}
+
+.pet-image.stage-adult {
+  width: 200px;
 }
 
 .pet-info {
@@ -207,8 +236,35 @@ select:focus {
 }
 
 .pet-breed {
-  margin: 2px 0 12px;
+  margin: 2px 0 8px;
   color: var(--muted);
+}
+
+.chip {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: #EAF3DE;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.stats {
+  display: flex;
+  gap: 10px;
+  margin: 0 0 12px;
+  font-size: 15px;
+}
+
+.stats dt {
+  color: var(--muted);
+}
+
+.stats dd {
+  margin: 0 18px 0 0;
+  font-weight: 600;
 }
 
 .meter-label {
@@ -244,6 +300,18 @@ select:focus {
   margin-top: 18px;
 }
 
+.confirm-box {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid var(--danger);
+  border-radius: var(--radius);
+  background: #FCEBEB;
+}
+
+.confirm-box p {
+  margin: 0 0 4px;
+}
+
 .site-footer {
   max-width: 960px;
   margin: 32px auto 0;
@@ -272,6 +340,22 @@ select:focus {
 
   .pet-image {
     width: 140px;
+  }
+
+  .pet-image.stage-puppy {
+    width: 100px;
+  }
+
+  .pet-image.stage-young {
+    width: 120px;
+  }
+
+  .pet-image.stage-adult {
+    width: 140px;
+  }
+
+  .stats {
+    flex-wrap: wrap;
   }
 
   input,
