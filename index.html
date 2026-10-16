@@ -18,6 +18,50 @@
       <p class="section-note">Three breeds, each with a local illustration and short care notes.</p>
       <div id="breed-list" class="breed-grid"></div>
     </section>
+
+    <section id="adoption" class="panel" aria-labelledby="adoption-title">
+      <h2 id="adoption-title">Adopt a dog</h2>
+      <form id="adoption-form" novalidate>
+        <div class="field">
+          <label for="dog-name">Dog name</label>
+          <input id="dog-name" name="dog-name" type="text" maxlength="20" autocomplete="off" placeholder="e.g. Buddy" aria-describedby="name-hint">
+          <p id="name-hint" class="hint">1-20 characters. Leading and trailing spaces are removed.</p>
+        </div>
+
+        <div class="field">
+          <label for="dog-breed">Breed</label>
+          <select id="dog-breed" name="dog-breed"></select>
+        </div>
+
+        <p id="form-message" class="message" role="status" aria-live="polite"></p>
+        <button type="submit" class="btn btn-primary">Adopt</button>
+      </form>
+    </section>
+
+    <section id="pet-panel" class="panel" aria-labelledby="pet-title" hidden>
+      <h2 id="pet-title">Your dog</h2>
+
+      <div class="pet-card">
+        <img id="pet-image" class="pet-image" src="assets/beagle.svg" alt="" width="180" height="180">
+
+        <div class="pet-info">
+          <p class="pet-name" id="pet-name"></p>
+          <p class="pet-breed" id="pet-breed"></p>
+
+          <p class="meter-label">Happiness <span id="happiness-value">50</span> / 100</p>
+          <div class="meter" role="progressbar" aria-label="Happiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <div class="meter-fill" id="happiness-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn" id="feed-button">Feed</button>
+        <button type="button" class="btn" id="play-button">Play</button>
+      </div>
+
+      <p id="action-message" class="message" role="status" aria-live="polite"></p>
+    </section>
   </main>
 
   <footer class="site-footer">
