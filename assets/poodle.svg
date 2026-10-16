@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="poodleTitle poodleDesc">
+  <title id="poodleTitle">Poodle</title>
+  <desc id="poodleDesc">Flat illustration of a cream poodle head with a curly topknot and curly ear puffs.</desc>
+  <circle cx="100" cy="100" r="94" fill="#FBEAF0"/>
+  <g fill="#EFDFC2">
+    <circle cx="100" cy="52" r="17"/>
+    <circle cx="76" cy="58" r="13"/>
+    <circle cx="124" cy="58" r="13"/>
+    <circle cx="62" cy="70" r="10"/>
+    <circle cx="138" cy="70" r="10"/>
+  </g>
+  <g fill="#EFDFC2">
+    <circle cx="52" cy="112" r="21"/>
+    <circle cx="48" cy="134" r="16"/>
+    <circle cx="60" cy="148" r="13"/>
+    <circle cx="148" cy="112" r="21"/>
+    <circle cx="152" cy="134" r="16"/>
+    <circle cx="140" cy="148" r="13"/>
+  </g>
+  <ellipse cx="100" cy="102" rx="43" ry="48" fill="#F6EBD6"/>
+  <ellipse cx="100" cy="126" rx="26" ry="24" fill="#FBF4E6"/>
+  <ellipse cx="100" cy="113" rx="9.5" ry="7" fill="#3B2F2A"/>
+  <path d="M100 120 L100 128" stroke="#3B2F2A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M100 128 C96 135 89 135 86 130" stroke="#3B2F2A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M100 128 C104 135 111 135 114 130" stroke="#3B2F2A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <circle cx="82" cy="94" r="6.5" fill="#3B2F2A"/>
+  <circle cx="118" cy="94" r="6.5" fill="#3B2F2A"/>
+  <circle cx="84" cy="92" r="2" fill="#FFFFFF"/>
+  <circle cx="120" cy="92" r="2" fill="#FFFFFF"/>
+  <path d="M66 154 C78 166 122 166 134 154" stroke="#D4537E" stroke-width="10" stroke-linecap="round" fill="none"/>
+</svg>

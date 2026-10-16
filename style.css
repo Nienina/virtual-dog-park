@@ -1,0 +1,121 @@
+:root {
+  --bg: #FBF8F3;
+  --surface: #FFFFFF;
+  --surface-soft: #F4EFE6;
+  --line: #E4DACB;
+  --text: #33302B;
+  --muted: #7A7367;
+  --accent: #C8843F;
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 20px 40px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.site-header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 36px 0 20px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.panel h2 {
+  margin: 0 0 4px;
+  font-size: 22px;
+}
+
+.section-note {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.breed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.breed-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+  padding: 16px;
+  text-align: center;
+}
+
+.breed-card img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.breed-card h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.breed-card p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.site-footer {
+  max-width: 960px;
+  margin: 32px auto 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 0 14px 32px;
+  }
+
+  .site-header h1 {
+    font-size: 26px;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+}

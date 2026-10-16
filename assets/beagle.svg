@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="beagleTitle beagleDesc">
+  <title id="beagleTitle">Beagle</title>
+  <desc id="beagleDesc">Flat illustration of a beagle head with long brown droopy ears.</desc>
+  <circle cx="100" cy="100" r="94" fill="#FAEEDA"/>
+  <path d="M58 72 C36 80 30 120 46 142 C57 157 75 152 76 135 C78 116 70 87 58 72 Z" fill="#A9713C"/>
+  <path d="M142 72 C164 80 170 120 154 142 C143 157 125 152 124 135 C122 116 130 87 142 72 Z" fill="#A9713C"/>
+  <ellipse cx="100" cy="100" rx="46" ry="50" fill="#FBF7F0"/>
+  <path d="M100 52 C76 52 64 68 60 86 C74 76 86 71 100 71 C114 71 126 76 140 86 C136 68 124 52 100 52 Z" fill="#C8843F"/>
+  <ellipse cx="100" cy="124" rx="29" ry="23" fill="#FFFFFF"/>
+  <ellipse cx="100" cy="112" rx="10" ry="7.5" fill="#3B2F2A"/>
+  <path d="M100 119 L100 127" stroke="#3B2F2A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M100 127 C96 134 88 134 85 129" stroke="#3B2F2A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M100 127 C104 134 112 134 115 129" stroke="#3B2F2A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <circle cx="82" cy="92" r="6.5" fill="#3B2F2A"/>
+  <circle cx="118" cy="92" r="6.5" fill="#3B2F2A"/>
+  <circle cx="84" cy="90" r="2" fill="#FFFFFF"/>
+  <circle cx="120" cy="90" r="2" fill="#FFFFFF"/>
+  <path d="M60 150 C74 164 126 164 140 150" stroke="#C8843F" stroke-width="10" stroke-linecap="round" fill="none"/>
+</svg>
